@@ -6,46 +6,58 @@ using System.Threading.Tasks;
 
 namespace My_Virtual_Pet
 {
-    class Pet //main method
+    class Pet //class
     {
-        private string num1;
-        private string num2;
-        private string num3;
-        private int one;
+        private string petName;
+        private string happiness;
+        private string bordom;
+        private int age;
 
-        public Pet(string num1)
+        public string greeting;
+
+        public string Name//properties
         {
-            this.num1 = num1;
-        }    
-        public Pet(string num1, string num2)//properties
-        {
-            this.num1 = num1;
-            this.num2 = num2;
-            this.num3 = num3;
-        } 
-        public Pet (string num1, string num2, int one)
-        {
-            this.num1 = num1;
-            this.num2 = num2;
-            this.num3 = num3;
+            get { return this.petName; }
+            set { this.petName = value; }
         }
-        public void //tick
+
+        public string Happiness
         {
-        for (int x = 0; x < 10; x++)
-            Console.Writeline();
+            get { return this.happiness; }
 
         }
-        public class Pet()
-        {
-    
-        }
-        public class Pet 
-        {
 
-        }
-        public class pet 
+        public string Bordom
         {
-
+            get { return this.bordom; }
         }
-             
+        public int Age
+        {
+            get { return this.age; }
+            set { this.age = value; }
+        }
+
+        public Pet() //constructor
+        {
+            age = 2;
+            Name = "Felipe";
+            greeting = "Hi, My name is Felipe, I am 2 years old.  Take care of me like your very own Pet";
+        }
+        public Pet(string petName, string happiness, string bordom, int age)
+        {
+            this.petName = petName;
+            this.happiness = happiness;
+            this.bordom = bordom;
+            this.age = age;
+        }
+        public Pet
+        
+        /*{
+         public void //tick
+        {
+            for (int i = 0; i < 10; i++)
+            Console.Writeline();*/
+         
+        }   
+    }  
 }   

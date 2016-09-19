@@ -10,6 +10,12 @@ namespace My_Virtual_Pet
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("This is My Virtual Pet, Felipe");
+
+            Pet thisPet = new Pet("Felilpe", "happiness", "boredom", 2);
+
+
+
         }
     }
 }
